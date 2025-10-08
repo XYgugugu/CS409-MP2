@@ -56,6 +56,10 @@ function ListView() {
         fetchAll();
     }, [fetchAll]);
 
+    useEffect(() => {
+      setPage(0);
+    }, [search]);
+
     const handleNextPage = useCallback(() => {
         setPage((prev) => prev + 1);
         window.scrollTo({ top: 0, behavior: "smooth" });
