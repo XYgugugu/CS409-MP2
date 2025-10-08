@@ -1,0 +1,191 @@
+.detailPage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 1rem;
+    min-height: 100vh;
+    background-color: #fafafa;
+}
+
+/* Card Container */
+.detailCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 18px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    padding: 2.5rem 2rem;
+    width: 360px;
+    text-align: center;
+    transition: transform 0.25s ease, box-shadow 0.3s ease;
+    background-size: cover;
+    background-position: center;
+}
+
+.detailCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+}
+
+/* Dynamic background colors */
+.normal { background-color: #a8a77a; }
+.fire { background-color: #ee8130; }
+.water { background-color: #6390f0; }
+.electric { background-color: #f7d02c; }
+.grass { background-color: #7ac74c; }
+.ice { background-color: #96d9d6; }
+.fighting { background-color: #c22e28; }
+.poison { background-color: #a33ea1; }
+.ground { background-color: #e2bf65; }
+.flying { background-color: #a98ff3; }
+.psychic { background-color: #f95587; }
+.bug { background-color: #a6b91a; }
+.rock { background-color: #b6a136; }
+.ghost { background-color: #735797; }
+.dragon { background-color: #6f35fc; }
+.dark { background-color: #705746; }
+.steel { background-color: #b7b7ce; }
+.fairy { background-color: #d685ad; }
+
+/* Type Capsules */
+.types {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin: 0.75rem 0 1.5rem;
+}
+
+.type {
+    padding: 0.3rem 0.7rem;
+    border-radius: 12px;
+    color: white;
+    text-transform: capitalize;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Image */
+.detailImage {
+    width: 180px;
+    height: auto;
+    margin: 1rem 0 0.5rem;
+}
+
+/* Text sections */
+.detailTitle,
+.infoGroup,
+.section,
+.detailBlockquote,
+.navButton,
+.navButtonDisabled,
+.detailBacklink {
+    color: #fff;
+}
+
+.detailTitle {
+    margin-bottom: 0.75rem;
+}
+
+/* Info Group (Height / Weight / XP) */
+.infoGroup p {
+    margin: 0.25rem 0;
+}
+
+/* Section Styling */
+.section {
+    width: 100%;
+    margin-top: 1.2rem;
+}
+
+.section h3 {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.25rem;
+}
+
+/* Stat list improvements */
+.statList {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0;
+    width: 100%;
+}
+
+.statList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+    padding: 0.3rem 0.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.statName {
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.statValue {
+    font-weight: 600;
+    color: #fff;
+}
+
+/* Flavor text */
+.detailBlockquote {
+    margin: 1.5rem auto 0.5rem;
+    font-style: italic;
+    background: rgba(255, 255, 255, 0.2);
+    border-left: 4px solid rgba(255, 255, 255, 0.5);
+    padding: 0.9rem 1rem;
+    border-radius: 6px;
+    max-width: 280px;
+    color: #fff;
+}
+
+/* Navigation buttons */
+.detailNavButtons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.navButton {
+    background-color: rgba(255, 255, 255, 0.25);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    text-decoration: none;
+    padding: 0.5rem 1.2rem;
+    border-radius: 6px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.navButton:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: translateY(-1px);
+}
+
+.navButtonDisabled {
+    opacity: 0.6;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+    padding: 0.5rem 1.2rem;
+}
+
+/* Back to list link */
+.detailBack {
+    display: inline-block;
+    margin-top: 1.5rem;
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+    opacity: 0.9;
+}
+
+.detailBack:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
