@@ -80,7 +80,7 @@ const DetailView: React.FC = () => {
                     {prevId ? (
                         <Link
                             to={`/pokemon/${prevId}`}
-                            state={{ orderedIds }}
+                            state={{ orderedIds, from: fromPage }}
                             className={styles.navButton}
                         >
                             ← Prev
@@ -92,7 +92,7 @@ const DetailView: React.FC = () => {
                     {nextId ? (
                         <Link
                             to={`/pokemon/${nextId}`}
-                            state={{ orderedIds }}
+                            state={{ orderedIds, from: fromPage }}
                             className={styles.navButton}
                         >
                             Next →
